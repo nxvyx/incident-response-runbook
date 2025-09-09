@@ -1,0 +1,6 @@
+alert_id,timestamp,src_ip,dst_ip,url,hash,log_message
+1,2025-09-01T12:20:11,192.168.1.10,8.8.8.8,http://malicious-site.com,44d88612fea8a8f36de82e1278abb02f,Detected suspicious outbound connection
+2,2025-09-01T12:21:15,10.0.0.5,13.107.21.200,http://login.microsoft.com,-,Multiple failed logins
+3,2025-09-01T12:23:40,172.16.0.7,142.250.185.14,http://phishingsite.xyz,098f6bcd4621d373cade4e832627b4f6,User clicked on email link
+4,2025-09-02T08:11:02,203.0.113.5,93.184.216.34,https://benign.example.com,-,Normal web traffic
+5,2025-09-03T14:45:00,10.10.10.10,192.0.2.50,http://suspicious-domain.test,da39a3ee5e6b4b0d3255bfef95601890afd80709,Malicious user agent observed

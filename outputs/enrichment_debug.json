@@ -1,0 +1,166 @@
+[
+  {
+    "alert_id": "1",
+    "timestamp": "2025-09-01T12:20:11",
+    "src_ip": "192.168.1.10",
+    "dst_ip": "8.8.8.8",
+    "url": "http://malicious-site.com",
+    "hash": "44d88612fea8a8f36de82e1278abb02f",
+    "log_message": "Detected suspicious outbound connection",
+    "classification": "Malware",
+    "recommended_action": "Isolate host, collect memory image, block hash on EDR, escalate to IR team",
+    "vt_hash_malicious_count": 65,
+    "vt_url_malicious_count": 9,
+    "_debug_enrichment": {
+      "vt_hash": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 65,
+          "suspicious": 0,
+          "undetected": 4,
+          "harmless": 0,
+          "timeout": 0,
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "type-unsupported": 7
+        }
+      },
+      "vt_url": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 9,
+          "suspicious": 1,
+          "undetected": 28,
+          "harmless": 60,
+          "timeout": 0
+        }
+      }
+    }
+  },
+  {
+    "alert_id": "2",
+    "timestamp": "2025-09-01T12:21:15",
+    "src_ip": "10.0.0.5",
+    "dst_ip": "13.107.21.200",
+    "url": "http://login.microsoft.com",
+    "hash": "-",
+    "log_message": "Multiple failed logins",
+    "classification": "Phishing",
+    "recommended_action": "Block URL/IP at proxy/firewall, force password reset for impacted users, scan mailbox",
+    "vt_hash_malicious_count": "",
+    "vt_url_malicious_count": 0,
+    "_debug_enrichment": {
+      "vt_hash": {
+        "info": "no_hash"
+      },
+      "vt_url": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 28,
+          "harmless": 70,
+          "timeout": 0
+        }
+      }
+    }
+  },
+  {
+    "alert_id": "3",
+    "timestamp": "2025-09-01T12:23:40",
+    "src_ip": "172.16.0.7",
+    "dst_ip": "142.250.185.14",
+    "url": "http://phishingsite.xyz",
+    "hash": "098f6bcd4621d373cade4e832627b4f6",
+    "log_message": "User clicked on email link",
+    "classification": "Phishing",
+    "recommended_action": "Block URL/IP at proxy/firewall, force password reset for impacted users, scan mailbox",
+    "vt_hash_malicious_count": 1,
+    "vt_url_malicious_count": 0,
+    "_debug_enrichment": {
+      "vt_hash": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 1,
+          "suspicious": 0,
+          "undetected": 61,
+          "harmless": 0,
+          "timeout": 0,
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "type-unsupported": 14
+        }
+      },
+      "vt_url": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 0,
+          "suspicious": 1,
+          "undetected": 31,
+          "harmless": 66,
+          "timeout": 0
+        }
+      }
+    }
+  },
+  {
+    "alert_id": "4",
+    "timestamp": "2025-09-02T08:11:02",
+    "src_ip": "203.0.113.5",
+    "dst_ip": "93.184.216.34",
+    "url": "https://benign.example.com",
+    "hash": "-",
+    "log_message": "Normal web traffic",
+    "classification": "Benign",
+    "recommended_action": "Monitor and close if no further alerts",
+    "vt_hash_malicious_count": "",
+    "vt_url_malicious_count": 0,
+    "_debug_enrichment": {
+      "vt_hash": {
+        "info": "no_hash"
+      },
+      "vt_url": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 30,
+          "harmless": 68,
+          "timeout": 0
+        }
+      }
+    }
+  },
+  {
+    "alert_id": "5",
+    "timestamp": "2025-09-03T14:45:00",
+    "src_ip": "10.10.10.10",
+    "dst_ip": "192.0.2.50",
+    "url": "http://suspicious-domain.test",
+    "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "log_message": "Malicious user agent observed",
+    "classification": "Benign",
+    "recommended_action": "Monitor and close if no further alerts",
+    "vt_hash_malicious_count": 0,
+    "vt_url_malicious_count": "ERROR:vt_submit_failed_400",
+    "_debug_enrichment": {
+      "vt_hash": {
+        "vt_status": "ok",
+        "analysis_stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 61,
+          "harmless": 0,
+          "timeout": 1,
+          "confirmed-timeout": 1,
+          "failure": 1,
+          "type-unsupported": 12
+        }
+      },
+      "vt_url": {
+        "error": "vt_submit_failed_400",
+        "raw": "{\"error\": {\"code\": \"InvalidArgumentError\", \"message\": \"Unable to canonicalize url\"}}"
+      }
+    }
+  }
+]
