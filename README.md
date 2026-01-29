@@ -47,7 +47,7 @@ incident\_response\_runbook/
 
 1. **Clone the repo**
 ```bash
-git clone https://github.com/<your-username>/incident-response-runbook.git
+git clone https://github.com/nxvyx/incident-response-runbook.git
 cd incident-response-runbook
 ````
 
